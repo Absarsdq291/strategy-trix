@@ -1,5 +1,6 @@
 import sys
-sys.path.append("./Live-Tools-V2")
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
 import asyncio
 import datetime
@@ -145,7 +146,7 @@ PARAMS = {
         },
     },
 }
-RELATIVE_PATH = "./Live-Tools-V2/strategies/trix"
+RELATIVE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'))
 
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
