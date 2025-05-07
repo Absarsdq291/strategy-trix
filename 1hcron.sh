@@ -1,1 +1,2 @@
-source Live-Tools-V2/.venv/bin/activate
+source .venv/bin/activate
+python3 strategies/trix/multi_bitmart.py
